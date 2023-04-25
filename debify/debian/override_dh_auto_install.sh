@@ -10,8 +10,5 @@ install -m 644 $SOURCE1 $DEB_INSTALL_ROOT/$ext_prefix/$conf_dir/
 
 mkdir -p debian/tmp/opt/cpanel/ea-php82/root/usr/lib64/php/modules
 
-cp /usr/src/packages/BUILD/memcached-$version/modules/memcached.so debian/tmp/opt/cpanel/ea-php82/root/usr/lib64/php/modules/memcached.so
-
-echo "FILELIST"
-find . -type f -print | sort
+cp /usr/src/packages/BUILD/modules/memcached.so debian/tmp/opt/cpanel/ea-php82/root/usr/lib64/php/modules/memcached.so
 

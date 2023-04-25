@@ -29,10 +29,7 @@ This is the PECL memcached extension, using the libmemcached library to connect
 to memcached servers.
 
 %prep
-set -x
-echo "SETUP BEGIN"
 %setup -n php-memcached-%{version}
-echo "SETUP END"
 
 %build
 set -x

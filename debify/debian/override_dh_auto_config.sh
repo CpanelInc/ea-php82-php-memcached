@@ -4,14 +4,6 @@ source debian/vars.sh
 
 set -x
 
-ls -ld /opt/cpanel/*
-ls -ld /opt/cpanel/ea-php82/root/usr/bin/*
-ls -ld /opt/cpanel/ea-php82/root/usr/bin/phpize
-
-pwd
-ls -ld *
-
-cd memcached-*
 /opt/cpanel/ea-php82/root/usr/bin/phpize
 
 ./configure \
