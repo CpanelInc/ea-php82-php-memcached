@@ -29,9 +29,6 @@ sub _get_required {
     # get $version, $url, $name from $res
     my $version;
     for my $tag ( @{ Cpanel::JSON::Load( $res->{content} ) } ) {
-use Data::Dumper;
-print "NAME :" . $tag->{name} . ":\n";
-
         next if $tag->{name} !~ m/^v\d+\.\d+\.\d+$/;
         $version = $tag->{name};
         last;
