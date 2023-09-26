@@ -8,7 +8,6 @@
         "libargon2-dev",
         "libmemcached-dev",
         "libmemcached11",
-        "ea-php82-php-cli",
         "ea-php82-php-common",
         "ea-php82-php-devel",
         "tzdata",
