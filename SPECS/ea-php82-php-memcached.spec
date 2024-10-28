@@ -6,7 +6,7 @@
 Name: %{scl_version}-php-memcached
 Version: 3.2.0
 Summary: php-memcached extension for %{scl_version}
-%define release_prefix 3
+%define release_prefix 4
 Release: %{release_prefix}%{?dist}.cpanel
 License: MIT
 Group: Programming/Languages
@@ -53,6 +53,9 @@ install -m 644 %{SOURCE1} %{buildroot}/%{ext_prefix}/%{conf_dir}/
 %config /%{ext_prefix}/%{conf_dir}/memcached.ini
 
 %changelog
+* Mon Oct 28 2024 Julian Brown <julian.brown@cpanel.net> - 3.2.0-4
+- ZC-12246: Correct conffiles for Ubuntu
+
 * Mon Feb 12 2024 Brian Mendoza <brian.mendoza@cpanel.net> - 3.2.0-3
 - ZC-11489: Remove unused package.xml
 
